@@ -12,9 +12,9 @@ directory '/nfs-root-default' do
 end
 
 
-file '/nfs-root-default/test-custom-json' do
-  content "try to get string #{node['string_test']} and get list #{node['list_test']}"
+template '/nfs-root-default/test-content' do
+  source 'test_content.erb'
+  owner 'root'
+  group 'root'
   mode '0755'
-  owner 'web_admin'
-  group 'web_admin'
 end
