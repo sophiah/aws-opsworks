@@ -1,4 +1,4 @@
-name 'opsworks-cookbooks'
+name 'opsworks-cookbooks-group'
 maintainer 'The Authors'
 maintainer_email 'you@example.com'
 license ''
